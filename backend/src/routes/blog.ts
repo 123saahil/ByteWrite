@@ -102,7 +102,7 @@ blogRouter.get("/bulk", async (c) => {
     },
   });
 
-  return c.json({blogs: posts});
+  return c.json({ blogs: posts });
 });
 
 //get a blog post by id
@@ -116,7 +116,17 @@ blogRouter.get("/:id", async (c) => {
     where: {
       id: id,
     },
+    select: {
+      id: true,
+      title: true,
+      content: true,
+      author: {
+        select: {
+          name: true,
+        },
+      },
+    },
   });
 
-  return c.json({blog: post});
+  return c.json({ blog: post });
 });
