@@ -5,6 +5,7 @@ import { sign } from "hono/jwt";
 import { userRouter } from "./routes/user";
 import { blogRouter } from "./routes/blog";
 import { cors } from "hono/cors";
+import { aiRouter } from "./routes/ai";
 
 const app = new Hono<{
   Bindings: {
@@ -20,7 +21,8 @@ app.get("/", (c) =>
 );
 app.route("/api/v1/user", userRouter);
 app.route("/api/v1/blog", blogRouter);
+app.route("/api/v1/generate", aiRouter);
 
-//signup route
+
 
 export default app;

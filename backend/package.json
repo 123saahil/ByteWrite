@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@123saahil/bytewrite-common": "^1.0.0",
+    "@google/generative-ai": "^0.24.1",
     "@prisma/client": "^6.15.0",
     "@prisma/extension-accelerate": "^2.0.2",
     "hono": "^4.9.5",

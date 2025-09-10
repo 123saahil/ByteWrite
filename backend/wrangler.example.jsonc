@@ -1,6 +1,7 @@
 {
   "vars": {
     "DATABASE_URL":"<your-db-url>",
-    "JWT_SECRET":"<your-secret>"
+    "JWT_SECRET":"<your-secret>",
+    "GEMINI_API_KEY": "<your-key"
   }
 }
