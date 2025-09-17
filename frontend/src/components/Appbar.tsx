@@ -112,7 +112,7 @@ export const Appbar = () => {
       {/* Toast */}
       {showToast && (
         <div className="fixed bottom-6 right-6 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg animate-fade-in-out">
-          Logging out…
+          Logging out...
         </div>
       )}
     </header>
